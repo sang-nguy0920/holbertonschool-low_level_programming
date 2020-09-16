@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+#include <string.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
 
 /**
  *main - prints a string in standard error
