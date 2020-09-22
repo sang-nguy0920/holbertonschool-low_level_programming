@@ -10,37 +10,20 @@
  */
 void times_table(void)
 {
-int x, y, z;
-
-for (x = 0; x <= 9; x++)
+int a, b, c;
+for (a = 0; a <= 9; a++)
 {
-for (y = 0; y <= 9; y++)
+_putchar('0');
+for (b = 1; b <= 9; b++)
 {
-z = (x * y);
-if (y == 9 && z >= 10)
-{
-_putchar(z / 10 % 10 + '0');
-_putchar(z  % 10 + '0');
-}
-else if (z >= 10)
-{
-_putchar(z / 10 % 10 + '0');
-_putchar(z  % 10 + '0');
 _putchar(',');
 _putchar(' ');
-}
-else if (y == 9)
-{
+c = a * b;
+if (c <= 9)
 _putchar(' ');
-_putchar((z % 10) + '0');
-}
 else
-{
-_putchar(' ');
-_putchar(z % 10 + '0');
-_putchar(',');
-_putchar(' ');
-}
+_putchar((c / 10) + '0');
+_putchar((c % 10) + '0');
 }
 _putchar('\n');
 }
