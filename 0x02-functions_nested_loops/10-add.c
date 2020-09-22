@@ -10,8 +10,5 @@
  */
 int add(int a, int b)
 {
-char c = a + b;
-if (a + b == c)
-_putchar(c % 10);
-return (c);
+	return (a + b);
 }
