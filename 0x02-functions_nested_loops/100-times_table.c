@@ -1,12 +1,10 @@
 #include "holberton.h"
 
 /**
- *print_times_table -   prints the n times table, starting with 0 - 15.
- *@n: int
+ *space - print spaces
+ *@s: number spaces to print
  *
- *Description:  prints the n times table, starting with 0 - 15.
- *section header: Section description
- *Return: returns int
+ * Return: void
  */
 void space(int s)
 {
@@ -16,7 +14,14 @@ for (t = 0; t < s; t++)
 _putchar(' ');
 }
 }
-
+/**
+ *print_times_table -   prints the n times table, starting with 0 - 15.
+ *@n: int
+ *
+ *Description:  prints the n times table, starting with 0 - 15.
+ *section header: Section description
+ *Return: returns int
+ */
 void print_times_table(int n)
 {
 int a, b;
