@@ -9,6 +9,7 @@
 void space(int s)
 {
 int t;
+_putchar(',');
 for (t = 0; t < s; t++)
 {
 _putchar(' ');
@@ -40,20 +41,17 @@ if (b > 0)
 c = a * b;
 if (c < 10)
 {
-_putchar(',');
 space(3);
 _putchar(c + '0');
 }
 else if (c < 100)
 {
-_putchar(',');
 space(2);
 _putchar((c / 10) + '0');
 _putchar((c % 10) + '0');
 }
 else
 {
-_putchar(',');
 space(1);
 _putchar((c / 100) + '0');
 _putchar(((c / 10) % 10) + '0');
