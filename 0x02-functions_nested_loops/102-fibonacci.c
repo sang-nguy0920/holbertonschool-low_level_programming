@@ -7,27 +7,19 @@
  * Return: void
  */
 
-void main(void)
+int main(void)
 {
-int fib1 = 0, fib2 = 1, fib3, num, count = 0;
-num = 50;
+int fib1 = 1, fib2 = 2, fib3 = 3, num;
 
-count = 0; /* fib1 and fib2 are already used */
-
-while (count < num)
-
+printf("%d, ", fib1);
+printf("%d, ", fib2);
+for (num = 3; num < 50; num++)
 {
-
-fib3 = fib1 + fib2;
-
-count++;
-
 printf("%d, ", fib3);
-
 fib1 = fib2;
-
 fib2 = fib3;
-
+fib3 = fib1 + fib2;
 }
-
+printf("%d\n", fib3);
+return (0);
 }
