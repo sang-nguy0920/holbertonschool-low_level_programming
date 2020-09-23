@@ -2,7 +2,7 @@
 
 /**
  *main - prints first 50 Fibonacci numbers
- *@n: number to print 50
+ *@:
  *
  * Return: void
  */
