@@ -1,24 +1,33 @@
 #include<stdio.h>
 
 /**
- *fibonacci - prints first 50 Fibonacci numbers
+ *main - prints first 50 Fibonacci numbers
  *@n: number to print 50
  *
- * Return: int
+ * Return: void
  */
 
-void main()
+void main(void)
 {
-int prv=0,pre=1,trm,i,n;
-n = 50;
-printf("% 5d % 5d", prv,pre);
- 
-for(i=1;i<=n;i++)
+int fib1 = 0, fib2 = 1, fib3, num, count = 0;
+num = 50;
+
+count = 0; /* fib1 and fib2 are already used */
+
+while (count < num)
+
 {
-trm=prv+pre;
-printf("% 5d",trm);
-prv=pre;
-pre=trm;
+
+fib3 = fib1 + fib2;
+
+count++;
+
+printf("%d, ", fib3);
+
+fib1 = fib2;
+
+fib2 = fib3;
+
 }
-printf("\n");
+
 }
