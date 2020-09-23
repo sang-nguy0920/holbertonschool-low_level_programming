@@ -8,17 +8,19 @@
  */
 int main(void)
 {
-long int fib1 = 1, fib2 = 2, fib3 = 3, num;
+long int fib1 = 1, fib2 = 2, fib3 = 0, num = 2;
 
-printf("%ld, ", fib1);
-printf("%ld, ", fib2);
-for (num = 3; num < 98; num++)
+for (; fib1 <= 4000000 && fib2 <= 4000000;)
 {
-printf("%ld\n", fib3);
+fib3 = fib1 + fib2;
+if (fib3 % 2 == 0)
+{
+num = num + fib3;
+}
 fib1 = fib2;
 fib2 = fib3;
-fib3 = fib1 + fib2;
 }
-printf("%ld\n", fib3);
+printf("%ld", num);
+putchar('\n');
 return (0);
 }
