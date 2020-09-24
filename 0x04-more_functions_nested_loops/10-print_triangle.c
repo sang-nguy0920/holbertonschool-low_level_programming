@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *print_square - prints a triangle, followed by a new line.
+ *print_triangle - prints a triangle, followed by a new line.
  *@n: size
  *
  *Description: prints a triangle, followed by a new line.
@@ -17,7 +17,7 @@ for (y = 1; y <= n; y++)
 {
 for (z = 1; z <= n; z++)
 {
-if (z <= (n -y))
+if (z <= (n - y))
 _putchar(' ');
 else
 _putchar('#');
