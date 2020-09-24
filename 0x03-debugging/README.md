@@ -1,6 +1,6 @@
 # 0x03. C - Debugging
 
-Files - bjectives
+Files - Objectives
 
 0-main.c, holberton.h - tests function
 1-main.c - Comment out (don’t delete it!) the part of the code
