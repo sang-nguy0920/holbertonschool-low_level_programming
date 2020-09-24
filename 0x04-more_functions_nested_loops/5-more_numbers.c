@@ -1,20 +1,6 @@
 #include "holberton.h"
 
 /**
- *newline - prints newline
- *@n: number newlines to print
- *
- * Return: newline
- */
-void newline(int n)
-{
-int t;
-for (t = 0; t < n; t++)
-{
-_putchar('\n');
-}
-}
-/**
  *more_numbers - prints 10 times the numbers, from 0 to 14
  *@void: void
  *
@@ -30,16 +16,10 @@ for (y = 0; y <= 9; y++)
 {
 for (x = 0; x <= 14; x++)
 {
-if (x >= 10)
-{
-_putchar(x / 10 + '0');
-_putchar(x % 10 + '0');
+if (x > 9)
+_putchar((x / 10) + '0');
+_putchar((x % 10) + '0');
 }
-else
-{
-_putchar(x + '0');
-}
-}
-newline(1);
+_putchar('\n');
 }
 }
