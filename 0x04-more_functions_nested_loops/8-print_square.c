@@ -11,17 +11,14 @@
 void print_square(int n)
 {
 int y, z;
+if (n <= 0)
+_putchar('\n');
 for (y = 0; y < n; y++)
 {
-for (z = 0; z < y; z++)
+for (z = 0; z < (n); z++)
 {
-if (n <= 0)
-{
-_putchar('\n');
-}
-_putchar('\n');
-}
 _putchar('#');
+}
 _putchar('\n');
 }
 }
