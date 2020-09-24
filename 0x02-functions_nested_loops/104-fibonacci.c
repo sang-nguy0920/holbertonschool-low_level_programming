@@ -9,17 +9,17 @@
 
 int main(void)
 {
-long int fib1 = 1, fib2 = 2, fib3 = 3, num;
+unsigned long int fib1 = 1, fib2 = 2, fib3 = 3, num;
 
-printf("%ld, ", fib1);
-printf("%ld, ", fib2);
+printf("%lu, ", fib1);
+printf("%lu, ", fib2);
 for (num = 3; num < 98; num++)
 {
-printf("%ld, ", fib3);
+printf("%lu, ", fib3);
 fib1 = fib2;
 fib2 = fib3;
 fib3 = fib1 + fib2;
 }
-printf("%ld\n", fib3);
+printf("%lu\n", fib3);
 return (0);
 }
