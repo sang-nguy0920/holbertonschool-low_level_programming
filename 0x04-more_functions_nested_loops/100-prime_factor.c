@@ -9,13 +9,13 @@
 
 int main(void)
 {
-unsigned long int a, n;
+long int a, n;
 n = 612852475143;
 for (a = 3; a < n; a += 2)
 {
 if ((n % a == 0) && (n != a))
 n = (n / a);
 }
-printf("%lu\n", n);
+printf("%ld\n", n);
 return (0);
 }
