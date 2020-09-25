@@ -9,17 +9,35 @@
 
 int main(void)
 {
-unsigned long int fib1 = 1, fib2 = 2, fib3 = 3, num;
+unsigned long int a1 = 1, b1 = 2, c1, a2, b2, c2, num;
 
-printf("%lu, ", fib1);
-printf("%lu, ", fib2);
-for (num = 3; num < 98; num++)
+printf("%lu, ", a1);
+printf("%lu, ", b1);
+c1 = a1 + b1;
+for (num = 3; num < 90; num++)
 {
-printf("%lu, ", fib3);
-fib1 = fib2;
-fib2 = fib3;
-fib3 = fib1 + fib2;
+printf("%lu, ", c1);
+a1 = b1;
+b1 = c1;
+c1 = a1 + b1;
 }
-printf("%lu\n", fib3);
+a2 = a1 / 1,000,000,000;
+a1 = a1 % 1,000,000,000;
+b2 = b1 / 1,000,000,000;
+b1 = b1 % 1,000,000,000;
+c2 = c1 / 1,000,000,000;
+c1 = c1 % 1,000,000,000;
+for (; num < 98; num++)
+{
+printf("%lu%lu, ", c2, c1);
+a1 = b1;
+a2 = b2;
+b1 = c1;
+b2 = c2;
+c1 = a1 + b1;
+c2 = a2 + b2 + (c1 / 1000000000);
+c1 = c1 % 1000000000;
+}
+printf("%lu%lu\n", c2, c1);
 return (0);
 }
