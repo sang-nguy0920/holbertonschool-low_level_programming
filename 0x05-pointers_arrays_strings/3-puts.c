@@ -2,12 +2,12 @@
 #include <stdio.h>
 
 /**
- *_strlen - function that returns the length of a string.
- *@s: *s pointer
+ *_puts - function that prints a string, followed by a new line, to stdout
+ *@str: *str pointer
  *
- *Description: function that returns the length of a string.
+ *Description: function that prints a string, followed by a new line, to stdout
  *section header: Section description
- *Return: returns int (string length)
+ *Return: returns void
  */
 
 void _puts(char *str)
