@@ -16,6 +16,10 @@ for (i = 0; str[i] != '\0'; i++)
 {
 ;
 }
+if (i % 2 != 0)
+{
+  i = i - 1;
+}
 for (i /= 2; str[i] != '\0'; i++)
 {
 _putchar(str[i]);
