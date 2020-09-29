@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- *rev_string - function that reverses a string. 
+ *rev_string - function that reverses a string.
  *@s: *s pointer
  *
- *Description: function that reverses a string. 
+ *Description: function that reverses a string.
  *section header: Section description
  *Return: returns void
  */
