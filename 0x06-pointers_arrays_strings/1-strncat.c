@@ -18,16 +18,12 @@ for (i = 0; dest[i] != '\0'; i++)
 {
 ;
 }
-for (j = 0; src[j] != '\0'; j++)
-if (src[j] > n)
-{
-dest[i] = src[j];
-break;
-}
-else
+j = 0;
+while (j < n && src[j] != '\0')
 {
 dest[i] = src[j];
 i++;
+j++;
 }
 return (dest);
 }
