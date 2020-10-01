@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *_strcmp - function that reverses the content of an array of integers.
+ *reverse_array - function that reverses the content of an array of integers.
  *@a: *a pointer
  *@n: integer
  *
