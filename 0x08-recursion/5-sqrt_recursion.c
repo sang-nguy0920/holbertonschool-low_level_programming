@@ -11,22 +11,37 @@
 
 int _sqrt_recursion(int n)
 {
-int i, result;
-i = 1, result = 1;
+if (n == 0 )
+return (0);
 
-if (n == 0 || n == 1)
-return (n);
+else if (n == 0)
+return (1);
 
-if (n < 0)
+else if (n < 0)
 return (-1);
 
-if (n % 2 != 0 && n % 5 != 0)
-return (-1);
-
-while (result <= n)
-{
-i++;
-result = (i *i);
+else
+return (conditional(n, 1));
 }
-return (i - 1);
+
+/**
+ *conditional - function defines condition
+ *@n: int n
+ *@i: int i
+ *
+ *Description: function defines condition
+ *section header: Section description
+ *Return: returns int
+ */
+
+int conditional( int n, int i)
+{
+if (n == (i * i))
+return (i);
+
+else if (n > (i * i))
+return (conditional(n, i + 1));
+
+else
+return (-1);
 }
