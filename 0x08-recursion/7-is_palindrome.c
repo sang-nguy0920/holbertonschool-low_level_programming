@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- *_strlen_recursion - function that returns string length.
+ *_strlen - function that returns string length.
  *@s: *s pointer
  *
  *Description: function that returns string length.
@@ -10,14 +10,14 @@
  *Return: returns int
  */
 
-int _strlen_recursion(char *s)
+int _strlen(char *s)
 {
 if (*s == '\0')
 {
 return (0);
 }
 s++;
-return (1 + _strlen_recursion(s));
+return (1 + _strlen(s));
 }
 
 /**
@@ -33,7 +33,7 @@ int is_palindrome(char *s)
 {
 int length;
 
-length = _strlen_recursion(s);
+length = _strlen(s);
 if (length <= 1)
 return (1);
 
