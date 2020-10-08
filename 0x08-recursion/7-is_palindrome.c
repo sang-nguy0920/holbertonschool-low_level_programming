@@ -37,11 +37,11 @@ length = _strlen_recursion(s);
 if (length <= 1)
 return (1);
 
-return (extra_palindrome(s, length));
+return (palindrome(s, length));
 }
 
 /**
- *extra_palindrome - function that returns 1 if a string is a palindrome.
+ *palindrome - function that returns 1 if a string is a palindrome.
  *@s: *s pointer
  *@length: int length
  *
@@ -50,14 +50,14 @@ return (extra_palindrome(s, length));
  *Return: returns int
  */
 
-int extra_palindrome(char *s, int length)
+int palindrome(char *s, int length)
 {
 if (length <= 1)
 return (1);
 
 else if (*s == *(s + length - 1))
 {
-return (extra_palindrome(s + 1, length - 2));
+return (palindrome(s + 1, length - 2));
 }
 else
 return (0);
