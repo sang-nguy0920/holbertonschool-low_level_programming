@@ -18,7 +18,7 @@ int y = atoi(argv[1]);
 
 if (argc == 2)
 {
-while (y > 0)
+while (y >= 0)
 {
 if (y < 0)
 {
@@ -39,7 +39,7 @@ else if (y % 5 == 0)
 y -= 5;
 x++;
 }
-else if (y % 2 == 0)
+else if (y % 2 == 0 || y / 2 != 3)
 {
 y -= 2;
 x++;
