@@ -18,7 +18,7 @@ int y = atoi(argv[1]);
 
 if (argc == 2)
 {
-while (y != 0)
+while (y > 0)
 {
 if (y < 0)
 {
