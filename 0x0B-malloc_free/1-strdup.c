@@ -22,7 +22,7 @@ return (NULL);
 
 for (j = 0 ; str[j] != '\0' ; j++)
 ;
-p = (char *)malloc(sizeof(char) * (j + 1));
+p = malloc(sizeof(char) * (j + 1));
 
 if (p == NULL)
 return (NULL);
