@@ -3,13 +3,13 @@
 #include <stdlib.h>
 
 /**
- *alloc_grid - function that returns a ptr to a 2 dimen array of ints.
- *@width: in width
+ *free_grid-  function that frees a 2 dimensional grid.
+ *@grid: **double pointer to grid
  *@height: int height
  *
- *Description: function that returns a ptr to a 2 dimen array of ints.
+ *Description:  function that frees a 2 dimensional grid.
  *section header: Section description
- *Return: returns int
+ *Return: returns void
  */
 
 void free_grid(int **grid, int height)
