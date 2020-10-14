@@ -63,7 +63,6 @@ i++;
 
 else
 {
-mem = 0;
 while(str[i] != ' ' && str[i] != '\0')
 {
 new[mem][plc] = str[i];
@@ -72,6 +71,7 @@ plc++;
 }
 new[mem][plc] = '\0';
 mem++;
+plc++;
 }
 }
 new[mem] = NULL;
