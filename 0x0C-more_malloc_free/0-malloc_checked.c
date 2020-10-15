@@ -18,5 +18,5 @@ p = malloc(b);
 
 if (p == NULL)
 exit('b');
-return(p);
+return (p);
 }
