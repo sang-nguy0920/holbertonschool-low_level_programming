@@ -3,6 +3,14 @@
 
 int _putchar(char c);
 
+/**
+ * struct dog - name, age, owner
+ * @name: First member
+ * @age: Second member
+ * @owner: Third member
+ *
+ * Description: name, age, owner
+ */
 struct dog
 {
 char *name;
