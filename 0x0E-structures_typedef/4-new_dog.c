@@ -37,32 +37,32 @@ return (dest);
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *p;
+dog_t *freedom_pug;
 
-p = malloc(sizeof(dog_t));
+freedom_pug = malloc(sizeof(dog_t));
 
-if (p == NULL)
+if (freedom_pug == NULL)
 return (NULL);
 
-(*p).name = malloc(sizeof(name) + 1);
+(*freedom_pug).name = malloc(sizeof(name) + 1);
 
 if (name == NULL)
 {
-free(p);
+free(freedom_pug);
 return (NULL);
 }
 
-(*p).owner = malloc(sizeof(owner) + 1);
+(*freedom_pug).owner = malloc(sizeof(owner) + 1);
 
-if ((*p).owner == NULL)
+if ((*freedom_pug).owner == NULL)
 {
-free((*p).name);
-free(p);
+free((*freedom_pug).name);
+free(freedom_pug);
 return (NULL);
 }
-_strcpy((*p).name, name);
-_strcpy((*p).owner, owner);
-(*p).age = age;
+_strcpy((*freedom_pug).name, name);
+_strcpy((*freedom_pug).owner, owner);
+(*freedom_pug).age = age;
 
-return (p);
+return (freedom_pug);
 }
