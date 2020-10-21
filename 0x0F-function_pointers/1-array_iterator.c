@@ -20,6 +20,6 @@ size_t SA;
 if (array == NULL || action == NULL)
 return;
 
-for (SA = 0; SA < size; SA++)
+for (SA = 0; size > SA; SA++)
 action(array[SA]);
 }
