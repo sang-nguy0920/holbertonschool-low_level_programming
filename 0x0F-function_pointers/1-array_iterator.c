@@ -3,11 +3,12 @@
 #include <stdlib.h>
 
 /**
- *print_name - function that prints a name.
- *@name: *name pointer
- *@f: *f function pointer
+ *array_iterator - function that executes a function given as a parameter
+ *@array: *array pointer
+ *@size: size
+ *@action: *action function pointer
  *
- *Description: function that prints a name.
+ *Description: function that executes a function given as a parameter
  *section header: Section description
  *Return: returns void
  */
