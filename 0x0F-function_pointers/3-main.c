@@ -1,6 +1,7 @@
 #include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  *main - contain your main function only.
@@ -24,7 +25,7 @@ exit(98);
 }
 
 doug = get_op_func(argv[2]);
-if (doug == NULL)
+if (doug == NULL || strlen(argv[2]) > 1)
 {
 printf("Error\n");
 exit(99);
