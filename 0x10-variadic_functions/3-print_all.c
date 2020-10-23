@@ -2,8 +2,7 @@
 
 /**
  *print_all -  function that prints anything.
- *@separator: *seperator pointer
- *@n: const unsigned int
+ *@format: *format const pointer
  *
  *Description:  function that prints anything.
  *section header: Section description
@@ -23,19 +22,23 @@ while (format[x] != '\0')
 {
 switch (format[x])
 {
-case 'c': printf("%c, ", va_arg(arg, int)); 
+case 'c':
+printf("%c, ", va_arg(arg, int));
 break;
-       
-case 'i': printf("%d, ", va_arg(arg, int)); 
+
+case 'i':
+printf("%d, ", va_arg(arg, int));
 break;
-     
-case 'f': printf("%f", va_arg(arg, double)); 
+
+case 'f':
+printf("%f", va_arg(arg, double));
 break;
-    
-case 's': printf("%s", va_arg(arg, char *)); 
+
+case 's':
+printf("%s", va_arg(arg, char *));
 break;
-       
-default: 
+
+default:
 break;
 }
 x++;
