@@ -1,11 +1,11 @@
 #include "variadic_functions.h"
 
 /**
- *print_numbers - function that prints numbers, followed by a new line.
+ *print_strings - function that prints strings, followed by a new line.
  *@separator: *seperator pointer
  *@n: const unsigned int
  *
- *Description: function that prints numbers, followed by a new line.
+ *Description: function that prints strings, followed by a new line.
  *section header: Section description
  *Return: returns void
  */
