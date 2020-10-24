@@ -38,7 +38,7 @@ case 's':
 printf("%s", va_arg(arg, char *));
 break;
 
-default: printf(", ");
+default:
 break;
 }
 x++;
