@@ -24,17 +24,14 @@ switch (format[x])
 {
 case 'c':
 printf("%c", va_arg(arg, int));
-printf(", ");
 break;
 
 case 'i':
 printf("%d", va_arg(arg, int));
-printf(", ");
 break;
 
 case 'f':
 printf("%f", va_arg(arg, double));
-printf(", ");
 break;
 
 case 's':
@@ -45,6 +42,10 @@ default:
 break;
 }
 x++;
+
+if (format[x] == 'c' || format[x] == 'i' || format[x] == 'f'
+|| format[x] == 's')
+printf(", ");
 }
 va_end(arg);
 break;
