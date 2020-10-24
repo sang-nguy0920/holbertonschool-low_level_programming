@@ -13,39 +13,38 @@ void print_all(const char * const format, ...)
 {
 va_list arg;
 
-unsigned int x = 0;
-
+unsigned int x = 0, b;
+char *str;
 while (format)
 {
 va_start(arg, format);
 while (format[x] != '\0')
 {
+b = 1;
 switch (format[x])
 {
 case 'c':
 printf("%c", va_arg(arg, int));
 break;
-
 case 'i':
 printf("%d", va_arg(arg, int));
 break;
-
 case 'f':
 printf("%f", va_arg(arg, double));
 break;
-
 case 's':
-printf("%s", va_arg(arg, char *));
+str = va_arg(arg, char *);
+if (!str)
+str = "(nil)";
+printf("%s", str);
 break;
-
 default:
+b = 0;
 break;
 }
-x++;
-
-if (format[x] == 'c' || format[x] == 'i' || format[x] == 'f'
-|| format[x] == 's')
+if (format[x + 1] && b)
 printf(", ");
+x++;
 }
 va_end(arg);
 break;
