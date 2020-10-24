@@ -29,9 +29,7 @@ printf("%s", separator);
 }
 }
 if (va_arg(arg, char *) == NULL)
-{
 printf("(nil)\n");
-}
 putchar('\n');
 va_end(arg);
 }
