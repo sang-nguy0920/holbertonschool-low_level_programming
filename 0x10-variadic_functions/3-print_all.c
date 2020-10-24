@@ -24,14 +24,17 @@ switch (format[x])
 {
 case 'c':
 printf("%c", va_arg(arg, int));
+printf(", ");
 break;
 
 case 'i':
 printf("%d", va_arg(arg, int));
+printf(", ");
 break;
 
 case 'f':
 printf("%f", va_arg(arg, double));
+printf(", ");
 break;
 
 case 's':
