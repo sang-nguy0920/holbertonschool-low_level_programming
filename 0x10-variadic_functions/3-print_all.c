@@ -23,11 +23,11 @@ while (format[x] != '\0')
 switch (format[x])
 {
 case 'c':
-printf("%c, ", va_arg(arg, int));
+printf("%c", va_arg(arg, int));
 break;
 
 case 'i':
-printf("%d, ", va_arg(arg, int));
+printf("%d", va_arg(arg, int));
 break;
 
 case 'f':
@@ -39,6 +39,7 @@ printf("%s", va_arg(arg, char *));
 break;
 
 default:
+printf(", ");
 break;
 }
 x++;
