@@ -11,15 +11,17 @@
 
 size_t print_list(const list_t *h)
 {
-unsigned int x = 0;
+size_t tmp = 0;
 
-const list_t *listtmp = h;
-
-while (listtmp != NULL)
+while (h)
 {
-printf("[%d] %s\n", listtmp->len, listtmp->str);
-listtmp = listtmp->next;
-x++;
+if (h->str == NULL)
+printf("[0] (nil)\n");
+
+else
+printf("[%u] %s\n", h->len, h->str);
+tmp++;
+h = h->next;
 }
-return (x);
+return (tmp);
 }
