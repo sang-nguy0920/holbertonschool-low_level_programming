@@ -3,7 +3,6 @@
 /**
  *print_first - function that prints str before main func
  *
- *
  *Description: function that prints str before main func
  *section header: Section description
  *Return: void
