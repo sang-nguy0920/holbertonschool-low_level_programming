@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- *free_list - function that frees a list_t list.
+ *free_listint - function that frees a listint_t list.
  *@head: *head pointer to elements
  *
- *Description: function that frees a list_t list.
+ *Description: function that frees a listint_t list.
  *section header: Section description
  *Return: void
  */
