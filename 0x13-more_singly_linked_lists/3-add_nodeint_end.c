@@ -3,7 +3,7 @@
 /**
  *add_nodeint_end - function that adds a new node at the end of a list_t list.
  *@head: **head pointer to elements
- *@str: *str pointer to str
+ *@n: const int
  *
  *Description: function that adds a new node at the end of a list_t list.
  *section header: Section description
