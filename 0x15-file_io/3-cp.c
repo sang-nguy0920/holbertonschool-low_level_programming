@@ -57,7 +57,7 @@ file_from = argv[1], file_to = argv[2];
 fd_from = open(file_from, O_RDONLY);
 
 if (fd_from == -1)
-exit(exit_msgs(97, NULL));
+exit(exit_msgs(98, file_from));
 
 fd_to = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
