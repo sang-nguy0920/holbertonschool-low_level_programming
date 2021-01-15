@@ -11,21 +11,21 @@
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
-hash_table_t *t;
+hash_table_t *ht;
 
 if (!size)
 return (NULL);
 
-t = malloc(sizeof(hash_table_t) * 1);
-if (!t)
+ht = malloc(sizeof(hash_table_t) * 1);
+if (!ht)
 return (NULL);
 
-t->array = calloc(size, sizeof(hash_node_t *));
-if (!t->array)
+ht->array = calloc(size, sizeof(hash_node_t *));
+if (!ht->array)
 {
-free(t);
+free(ht);
 return (NULL);
 }
-t->size = size;
-return (t);
+ht->size = size;
+return (ht);
 }
