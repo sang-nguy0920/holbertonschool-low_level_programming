@@ -5,7 +5,7 @@
  * @ht: i hash table you want to look into
  * @key: is the key looking for
  *
- * Return: value associated with the element, or NULL if key couldn’t be found
+ * Return: value associated with the element, or NULL
  */
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
@@ -15,7 +15,7 @@ hash_node_t *node;
 if (!ht || !key)
 return (NULL);
 idx = key_index((unsigned char *)key, ht->size);
-if(!ht->array || !(ht->array)[idx])
+if (!ht->array || !(ht->array)[idx])
 return (NULL);
 
 node = (ht->array)[idx];
