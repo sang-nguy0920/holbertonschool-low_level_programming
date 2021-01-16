@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_print - function that deletes a hash table.
+ * hash_table_delete - function that deletes a hash table.
  * @ht: the hash table
  *
  * Return: void
