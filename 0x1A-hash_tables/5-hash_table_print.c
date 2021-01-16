@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_get - function that prints a hash table.
+ * hash_table_print - function that prints a hash table.
  * @ht: i hash table you want to look into
  *
  * Return: void
