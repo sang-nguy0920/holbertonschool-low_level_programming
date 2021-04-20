@@ -1,4 +1,5 @@
 #include "search_algos.h"
+
 /**
  * linear_search - searches for a value in an array of ints
  * @array: pointer to the first element
@@ -9,7 +10,7 @@
  */
 int linear_search(int *array, size_t size, int value)
 {
-size_t x;
+size_t i;
 
 if (array == NULL)
 return (-1);
