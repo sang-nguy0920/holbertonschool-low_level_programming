@@ -14,15 +14,12 @@ size_t x = 0;
 if (array == NULL)
 return (-1);
 
-while (x < size)
+for (x = 0; x < size; x++)
 {
-printf("Value checked array[%ld] = [%d]\n", x,
-array[x]);
+printf("Value checked array[%ld] = [%d]\n", x, array[x]);
 
 if (array[x] == value)
 return (x);
-x++;
 }
-
 return (-1);
 }
