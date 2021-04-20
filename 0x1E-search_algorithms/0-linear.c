@@ -16,7 +16,7 @@ return (-1);
 
 for (x = 0; x < size; x++)
 {
-printf("Value checked array[%ld] = [%d]\n", x, array[x]);
+printf("Value checked array[%li] = [%li]\n", (long int)x, (long int)array[x]);
 
 if (array[x] == value)
 return (x);
